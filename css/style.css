@@ -419,6 +419,12 @@ a {
   padding: 20px 0 0;
   margin: 0 0 32px 0;
 }
+@media (max-width: 767px) {
+  .breadcrumbs {
+    padding: 15px 0 0;
+    margin: 0 0 15px 0;
+  }
+}
 .breadcrumbs--alternate .breadcrumbs__list {
   justify-content: flex-start;
 }
@@ -485,7 +491,7 @@ a {
 }
 @media (max-width: 1023px) {
   .advices__title {
-    margin: 0 0 40px;
+    margin: 0 0 38px;
     font-size: 32px;
     line-height: 36px;
   }
@@ -586,6 +592,13 @@ a {
     transform: translateY(-50%);
   }
 }
+@media (max-width: 1023px) {
+  .advice-card__bottom {
+    max-width: 186px;
+    transform: unset;
+    bottom: 28px;
+  }
+}
 .advice-card__label {
   font-size: 13px;
   line-height: 16px;
@@ -614,10 +627,17 @@ a {
   .advice-card__title {
     font-size: 16px;
     line-height: 20px;
+    margin: auto 0 22 px;
   }
 }
 .advice-card__btn {
   padding: 14px;
+}
+@media (max-width: 1023px) {
+  .advice-card__btn {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 
 .press-room__title {

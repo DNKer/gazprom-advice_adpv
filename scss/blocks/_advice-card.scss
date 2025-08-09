@@ -65,6 +65,12 @@
       bottom: 28px;
       transform: translateY(-50%);
     }
+
+    @include vp-1023 {
+      max-width: 186px;
+      transform: unset;
+      bottom: 28px;
+    }
   }
 
 
@@ -124,10 +130,16 @@
     @include vp-1023 {
       font-size: 16px;
       line-height: 20px;
+      margin: auto 0 22 px;
     }
   }
 
   &__btn {
     padding: 14px;
+
+    @include vp-1023 {
+      padding: 8px;
+      font-size: 12px;
+    }
   }
 }
