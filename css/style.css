@@ -458,6 +458,10 @@ a {
   transform: translateY(-50%);
   right: -11px;
 }
+.breadcrumbs__link:focus, .breadcrumbs__link:hover {
+  color: #476BF0;
+  cursor: pointer;
+}
 @media (max-width: 767px) {
   .breadcrumbs__link {
     font-size: 12px;
@@ -547,6 +551,11 @@ a {
     min-height: 380px;
   }
 }
+@media (max-width: 767px) {
+  .advice-card {
+    min-height: 320px;
+  }
+}
 .advice-card__picture {
   position: absolute;
   border-radius: 20px;
@@ -579,6 +588,15 @@ a {
   gap: 8px;
   margin: 0 0 20px 0;
 }
+@media (max-width: 767px) {
+  .advice-card__top {
+    top: 15px;
+    left: 15px;
+    gap: 5px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
 .advice-card__bottom {
   max-width: 246px;
   position: absolute;
@@ -587,16 +605,14 @@ a {
 }
 @media (max-width: 1023px) {
   .advice-card__bottom {
-    left: 20px;
+    max-width: 186px;
     bottom: 28px;
-    transform: translateY(-50%);
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .advice-card__bottom {
-    max-width: 186px;
-    transform: unset;
-    bottom: 28px;
+    bottom: 20px;
+    left: 15px;
   }
 }
 .advice-card__label {
@@ -614,6 +630,7 @@ a {
   .advice-card__label {
     font-size: 10px;
     line-height: 14px;
+    max-width: 100px;
   }
 }
 .advice-card__title {
@@ -627,7 +644,15 @@ a {
   .advice-card__title {
     font-size: 16px;
     line-height: 20px;
-    margin: auto 0 22 px;
+    margin: auto 0 22px;
+  }
+}
+@media (max-width: 767px) {
+  .advice-card__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: auto 0 15px;
+    max-width: 135px;
   }
 }
 .advice-card__btn {
@@ -638,6 +663,16 @@ a {
     padding: 8px;
     font-size: 12px;
   }
+}
+.advice-card__btn:hover, .advice-card__btn:focus {
+  background-color: #3356D7;
+}
+.advice-card__btn:disabled {
+  background-color: #F0F0F0;
+  color: #9A9BA0;
+}
+.advice-card:focus .advice-card__btn, .advice-card:hover .advice-card__btn {
+  background-color: #3356D7;
 }
 
 .press-room__title {
@@ -899,9 +934,11 @@ a {
     margin: 0;
   }
 }
-.footer__logo-image {
-  width: 151px;
-  height: 32px;
+@media (max-width: 767px) {
+  .footer__logo-image {
+    width: 151px;
+    height: 32px;
+  }
 }
 .footer__contacts-list {
   display: flex;
@@ -954,6 +991,9 @@ a {
     line-height: 22px;
   }
 }
+.footer__contacts-phone:hover, .footer__contacts-phone:focus {
+  color: #476BF0;
+}
 .footer__info {
   align-items: center;
   display: flex;
@@ -995,6 +1035,9 @@ a {
   justify-content: center;
   text-decoration: none;
   width: 40px;
+}
+.footer__app-link:hover, .footer__app-link:focus {
+  background-color: #DBDBDD;
 }
 .footer__note {
   color: rgba(106, 110, 128, 0.4);

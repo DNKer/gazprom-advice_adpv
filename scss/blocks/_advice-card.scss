@@ -20,6 +20,10 @@
     min-height: 380px;
   }
 
+  @include vp-767 {
+    min-height: 320px;
+  }
+
   &__picture {
     position: absolute;
     border-radius: 20px;
@@ -52,6 +56,14 @@
     align-items: center;
     gap: 8px;
     margin: 0 0 20px 0;
+
+    @include vp-767 {
+      top: 15px;
+      left: 15px;
+      gap: 5px;
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
 
   &__bottom {
@@ -60,16 +72,20 @@
     bottom: 32px;
     left: 20px;
 
-    @include vp-1023 {
-      left: 20px;
-      bottom: 28px;
-      transform: translateY(-50%);
-    }
+    // @include vp-1023 {
+    //   left: 20px;
+    //   bottom: 28px;
+    //   transform: translateY(-50%);
+    // }
 
     @include vp-1023 {
       max-width: 186px;
-      transform: unset;
       bottom: 28px;
+    }
+
+    @include vp-767 {
+      bottom: 20px;
+      left: 15px;
     }
   }
 
@@ -117,6 +133,7 @@
     @include vp-767 {
       font-size: 10px;
       line-height: 14px;
+      max-width: 100px;
     }
   }
 
@@ -130,7 +147,14 @@
     @include vp-1023 {
       font-size: 16px;
       line-height: 20px;
-      margin: auto 0 22 px;
+      margin: auto 0 22px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+      margin: auto 0 15px;
+      max-width: 135px;
     }
   }
 
@@ -140,6 +164,23 @@
     @include vp-1023 {
       padding: 8px;
       font-size: 12px;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $color-free-speech-blue;
+  }
+
+  &__btn:disabled {
+    background-color: $color-white-smoke;
+    color: $color-manatee-2;
+  }
+
+  &:focus,
+  &:hover {
+    .advice-card__btn {
+      background-color: $color-free-speech-blue;
     }
   }
 }

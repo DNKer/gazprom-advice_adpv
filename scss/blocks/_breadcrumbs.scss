@@ -46,6 +46,12 @@
       }
     }
 
+    &:focus,
+    &:hover {
+      color: $color-royal-blue;
+      cursor: pointer;
+    }
+
     @include vp-767 {
       font-size: 12px;
       line-height: 16px;
