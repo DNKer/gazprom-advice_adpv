@@ -6,6 +6,10 @@
   border-radius: 12px;
   padding: 32px;
 
+  @include vp-1023 {
+    padding: 30px;
+  }
+
   &--vertical {
     height: 100%;
     padding: 32px 20px 20px;
@@ -88,6 +92,16 @@
 
   &__picture {
     flex-shrink: 0;
+
+    @include vp-1023 {
+      width: 220px;
+      height: 140px;
+    }
+
+    @include vp-767 {
+      width: 160px;
+      height: 100px;
+    }
   }
 
   &__label {
@@ -102,6 +116,13 @@
     text-align: center;
     text-transform: uppercase;
     width: 66px;
+
+    @include vp-1023 {
+      margin: 0 0 15px 0;
+      font-size: 8px;
+      line-height: 12px;
+      width: 58px;
+    }
   }
 
   &__title {
@@ -109,15 +130,31 @@
     font-weight: 700;
     line-height: 30px;
     margin: 0 0 12px 0;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__note {
     font-size: 15px;
     line-height: 22px;
     margin: 0;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__btn {
     width: 140px;
+
+    @include vp-1023 {
+      width: 127px;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }
