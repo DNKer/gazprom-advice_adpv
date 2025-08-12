@@ -778,6 +778,11 @@ a {
     padding: 80px 0;
   }
 }
+@media (max-width: 767px) {
+  .features {
+    padding: 60px 0;
+  }
+}
 .features__title {
   margin: 0 0 60px;
   font-size: 36px;
@@ -789,6 +794,13 @@ a {
     margin: 0 0 40px;
     font-size: 28px;
     line-height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .features__title {
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -806,7 +818,7 @@ a {
 @media (max-width: 1023px) {
   .features-list {
     grid-template-columns: repeat(1, 1fr);
-    gap: 14px;
+    gap: 15px;
   }
 }
 
@@ -822,6 +834,11 @@ a {
 @media (max-width: 1023px) {
   .features-card {
     padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .features-card {
+    padding: 20px 0 20px 20px;
   }
 }
 .features-card--vertical {
@@ -887,6 +904,13 @@ a {
     justify-content: space-between;
   }
 }
+@media (max-width: 767px) {
+  .features-card__wrapper {
+    gap: 0;
+    margin: 0;
+    height: 165px;
+  }
+}
 .features-card__inner {
   align-items: flex-start;
   display: flex;
@@ -906,6 +930,9 @@ a {
   .features-card__picture {
     width: 160px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 .features-card__label {
@@ -923,6 +950,7 @@ a {
 }
 @media (max-width: 1023px) {
   .features-card__label {
+    padding: 4px;
     margin: 0 0 15px 0;
     font-size: 8px;
     line-height: 12px;
@@ -963,6 +991,11 @@ a {
     position: absolute;
     bottom: 30px;
     left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .features-card__btn {
+    position: unset;
   }
 }
 
