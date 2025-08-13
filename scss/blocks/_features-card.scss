@@ -13,6 +13,7 @@
 
   @include vp-767 {
     padding: 20px 0 20px 20px;
+    min-height: 230px;
   }
 
   &--vertical {
@@ -73,10 +74,43 @@
 
   &--bg-blue {
     background-color: $color-royal-blue;
+
+    @include vp-767 {
+      position: relative;
+
+      .features-card__picture {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding: 0;
+        transform: translateY(-50%);
+      }
+
+      .features-card__inner {
+        max-width: 200px;
+      }
+    }
+
   }
 
   &--bg-green {
     background-color: $color-humming-bird;
+
+    @include vp-767 {
+      position: relative;
+
+      .features-card__picture {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding: 0;
+        transform: translateY(-50%);
+      }
+
+      .features-card__inner {
+        max-width: 200px;
+      }
+    }
   }
 
   &--bg-lightblue {
@@ -95,9 +129,7 @@
 
     @include vp-767 {
       gap: 0;
-      margin: 0;
-
-      // 
+      margin: 0 0 -11px 0;
       height: 165px;
     }
   }
@@ -119,12 +151,13 @@
 
     @include vp-767 {
       width: 160px;
-      height: 100px;
-      
-// 
+      // height: 100px;
+
+      // 
       display: flex;
       align-items: center;
       height: 100%;
+      padding: 24px 0 0;
     }
   }
 
