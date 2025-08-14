@@ -13,6 +13,7 @@
 
   @include vp-767 {
     padding: 20px 0 20px 20px;
+    min-height: 230px;
   }
 
   &--vertical {
@@ -73,6 +74,23 @@
 
   &--bg-blue {
     background-color: $color-royal-blue;
+
+    @include vp-767 {
+      position: relative;
+
+      .features-card__picture {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding: 0;
+        transform: translateY(-50%);
+      }
+
+      .features-card__inner {
+        max-width: 200px;
+      }
+    }
+
   }
 
   &--bg-green {

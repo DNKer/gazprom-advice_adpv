@@ -844,6 +844,7 @@ a {
 @media (max-width: 767px) {
   .features-card {
     padding: 20px 0 20px 20px;
+    min-height: 230px;
   }
 }
 .features-card--vertical {
@@ -891,6 +892,21 @@ a {
 }
 .features-card--bg-blue {
   background-color: #476BF0;
+}
+@media (max-width: 767px) {
+  .features-card--bg-blue {
+    position: relative;
+  }
+  .features-card--bg-blue .features-card__picture {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+  .features-card--bg-blue .features-card__inner {
+    max-width: 200px;
+  }
 }
 .features-card--bg-green {
   background-color: #CFF6E7;
