@@ -79,6 +79,22 @@
     background-color: $color-humming-bird;
   }
 
+  &--bg-blue,
+  &--bg-green {
+    @include vp-767 {
+      .features-card__inner {
+        max-width: 200px;
+      }
+
+      .features-card__picture {
+        position: absolute;
+        padding-bottom: 43px;
+        top: 23px;
+        right: 0;
+      }
+    }
+  }
+
   &--bg-lightblue {
     background-color: $color-pattens-blue;
   }
@@ -96,9 +112,8 @@
     @include vp-767 {
       gap: 0;
       margin: 0;
-
-      // 
-      height: 165px;
+      position: relative;
+      height: 154px;
     }
   }
 
@@ -119,12 +134,10 @@
 
     @include vp-767 {
       width: 160px;
-      height: 100px;
-      
-// 
       display: flex;
       align-items: center;
       height: 100%;
+      padding: 35px 0 0;
     }
   }
 
