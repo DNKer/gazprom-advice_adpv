@@ -20,14 +20,30 @@
     height: 100%;
     padding: 32px 20px 20px;
 
+    @include vp-1023 {
+      padding: 15px;
+      min-height: 204px;
+    }
+
     .features-card__wrapper {
       flex-direction: column;
       height: 100%;
       margin: 0 0 25px 0;
+
+      @include vp-1023 {
+        flex-direction: row;
+        margin: 0;
+        gap: 6px;
+      }
     }
 
     .features-card__inner {
       align-items: center;
+
+      @include vp-1023 {
+        align-items: flex-start;
+        // margin: 0 0 25px;
+      }
     }
 
     .features-card__label {
@@ -39,21 +55,46 @@
       line-height: 24px;
       margin: 0 0 8px 0;
       text-align: center;
+
+      @include vp-1023 {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 14px 0;
+        text-align: left;
+      }
     }
 
     .features-card__note {
       font-size: 14px;
       line-height: 20px;
       text-align: center;
+
+      @include vp-1023 {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+      }
     }
 
     .features-card__picture {
       margin: auto auto 0;
       padding: 0 18px;
+
+      @include vp-1023 {
+        margin: 46px 0 0;
+        padding: 0;
+        width: 130px;
+        height: 80px;
+      }
     }
 
     .features-card__btn {
       margin: 0 auto;
+
+      @include vp-1023 {
+        margin: 0;
+        position: unset;
+      }
     }
   }
 
