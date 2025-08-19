@@ -15,6 +15,19 @@
     background-color: $color-solitude-2;
   }
 
+  &__link:focus,
+  &__link:hover {
+    background-color: $color-solitude-5;
+
+    .news__title {
+      color: $color-royal-blue;
+    }
+
+    .news__text {
+      text-decoration: none;
+    }
+  }
+
   &__image {
     width: 100%;
   }
@@ -23,6 +36,10 @@
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
+
+    @include vp-767 {
+      padding: 15px;
+    }
   }
 
   &__date {
@@ -35,6 +52,10 @@
       font-size: 12px;
       line-height: 16px;
     }
+
+    @include vp-767 {
+      margin: 0 0 5px;
+    }
   }
 
   &__title {
@@ -45,6 +66,12 @@
     @include vp-1023 {
       font-size: 18px;
       line-height: 22px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 15px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
@@ -59,5 +86,15 @@
       font-size: 12px;
       line-height: 16px;
     }
+  }
+
+  &__text:hover,
+  &__text:focus {
+    color: $color-royal-blue;
+    text-decoration: none;
+  }
+
+  &__text:disabled {
+    color: $color-black-russian;
   }
 }

@@ -31,4 +31,9 @@
       }
     }
   }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $color-quartz;
+  }
 }
