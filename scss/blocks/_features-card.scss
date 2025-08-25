@@ -59,8 +59,6 @@
 
       .features-card__img {
         position: unset;
-        // width: 130px;
-        // height: 80px;
       }
     }
 
@@ -174,7 +172,6 @@
   &--bg-lightblue {
     @include vp-767 {
       .features-card__note {
-        // min-width: 200px;
         z-index: 1;
       }
 
@@ -272,7 +269,6 @@
     @include vp-1023 {
       font-size: 14px;
       line-height: 20px;
-      // margin-bottom: 30px;
     }
   }
 
@@ -290,7 +286,6 @@
 
     @include vp-767 {
       position: unset;
-      // margin: auto 0 20px;
     }
   }
 }
